@@ -5,6 +5,7 @@ from Adafruit_IO import MQTTClient
 
 AIO_FEED_ID = "sensor1"
 AIO_USERNAME = "macundkase"
+AIO_KEY = ""
 
 def connected(client):
     print("Ket noi thanh cong ...")
@@ -33,4 +34,3 @@ while True:
     client.publish("sensor1", random.randint(20, 70))
     client.publish("sensor2", random.randint(0, 100))
     client.publish("sensor3", random.randint(0, 100))
-    pass
